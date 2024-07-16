@@ -10,7 +10,7 @@ public class Ball : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-
+    
     public void Release() 
     {
         rb.AddForce(rb.velocity * speed, ForceMode.Impulse);

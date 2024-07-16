@@ -8,8 +8,8 @@ public class BallDetector : MonoBehaviour
     {
         if(other.CompareTag("Ball"))
         {
-            Destroy(other.gameObject);
-            StartCoroutine(MoveBall(2f));
+            Destroy(other.gameObject, 5f);
+            StartCoroutine(MoveBall(10f));
         }
     }
 
